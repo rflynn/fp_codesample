@@ -14,18 +14,3 @@ http://<server>/stat/get will return a result in JSON with following options:
 }
 ```
 
-# Test
-```sh
-make test
-```
-
-# Install
-```
-/bin/bash install.sh
-docker run rflynn:flashpoint_stat
-```
-
-# Redhat
-
-https://docs.docker.com/engine/installation/rhel/
-
