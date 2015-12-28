@@ -75,10 +75,23 @@ WSGI_APPLICATION = 'flashpoint_stat.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+'''
+
+DATABASES = {
+    'default': {
+        'ENGINE'  : 'django.db.backends.postgresql_psycopg2',
+        'NAME'    : 'fpstat',
+        'USER'    : 'fpstat',
+        'PASSWORD': 'tW6dWQZ8tpy3',
+        'HOST'    : 'fpstat.ccon1imhl6ui.us-east-1.rds.amazonaws.com',
+        'PORT'    : '5432',
     }
 }
 
