@@ -14,6 +14,17 @@ http://<server>/stat/get will return a result in JSON with following options:
 }
 ```
 
+# Build
+
+## OS X
+
+```
+docker-machine create -d virtualbox default
+docker-machine run default
+eval "$(docker-machine env default)" # magic os x docker command...
+docker-compose build
+```
+
 # Test
 ```sh
 make test
